@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment Week 2</title>
+    </head>
+    <body>
+        <h1>My Assignment for Week 2</h1>
+        <p>This week I have learned about semantic HTML, definition lists, nested lists, multimedia elements, and tables.</p>
+        
+        <h2>Semantic HTML Example</h2>
+        <header>
+            <h2>Welcome to My Website</h2>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h3>My First Article</h3>
+                <p>This is an example of an article element in semantic HTML.</p>
+            </article>
+            <section>
+                <h3>My Hobbies</h3>
+                <ul>
+                    <li>Reading</li>
+                    <li>Traveling</li>
+                    <li>Coding</li>
+                </ul>
+            </section>
+            <aside>
+                <h4>Quick Links</h4>
+                <a href="#">Blog</a><br/>
+                <a href="#">Portfolio</a><br/>
+                <a href="#">Contact Me</a>
+            </aside>
+        </main>
+        <footer>
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+        </footer>
+
+        <h2>Definition List Example</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+            <dt>JS</dt>
+            <dd>JavaScript</dd>      
+        </dl>
+
+        <h2>Nested List Example</h2>
+        <ol type="1">
+            <li>Fruits
+                <ul type="circle">
+                    <li>Citrus
+                        <ul type="square">
+                            <li>Orange</li>
+                            <li>Lemon</li>
+                        </ul>
+                    </li>
+                    <li>Berries
+                        <ul type="square">
+                            <li>Strawberry</li>
+                            <li>Blueberry</li>
+                         </ul>
+                    </li>
+                </ul>   
+            </li>
+        </ol>
+        <h2>Multimedia Example</h2>
+        <h3>Image</h3>
+        <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" alt="image of a computer" width="300" height="200"/>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio playback.
+        </audio>
+        <h3>Video</h3>  
+        <video width="320" height="240" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video playback.
+        </video>
+        <h2>Table Example</h2>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Laptop</td>
+                    <td>$800</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>Smartphone</td>
+                    <td>$600</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Tablet</td>
+                    <td>$300</td>
+                    <td>7</td>
+                </tr>
+            </tbody>   
+        </table>
+        <h2>Forms example</h2>        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Registration</legend>
+            <label for="name">Name:</label><br/>
+            <input type="text" id="name" name="name" required><br/><br/>
+            <label for="email">Email:</label><br/>
+            <input type="email" id="email" name="email" required><br/><br/>
+            <label for="password">Password:</label><br/>
+            <input type="password" id="password" name="password" required><br/><br/>
+            <label for="age" id ="age">Age:</label><br/>
+            <input type="date" id="dob" name="dob" required><br/><br/>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="gender" name="gender" value="Male">Male
+            <input type="radio" id="gender" name="gender" value="Female">Female<br/><br/>
+            <label for="zipcode">Zipcode:</label>
+            <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" title="Five digit zip code" minlength="1" maxlength="5" required><br/><br/>
+            <label for="comments">Comments:</label><br/>
+            <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Enter your comments here..." required></textarea><br/><br/>
+            <input type="submit" value="Register">
+            </fieldset>
+        </form>
+      </body>
+</html>   
